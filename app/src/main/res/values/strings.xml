@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">QuizApp</string>
+    <!-- User Name-->
+    <string name="editText_Name">Your name</string>
+    <!-- Question-->
+    <string name="textView_derdiedas">Der? Die? Das?</string>
+
+    <!-- Answer-->
+    <string name="der">Der</string>
+    <string name="die">Die</string>
+    <string name="das">Das</string>
+
+    <!-- a, The words of question-->
+    <string name="aQuestion">____ Apfel</string>
+    <!-- b, The words of question-->
+    <string name="bQuestion">____ Tisch</string>
+    <!-- c, The words of question-->
+    <string name="cQuestion">____ Frosch</string>
+    <!-- d, The words of question-->
+    <string name="dQuestion">____ Hund</string>
+    <!-- e, The words of question-->
+    <string name="eQuestion">____ Computer</string>
+
+    <string name="reset">Reset</string>
+    <string name="evaluation">Evaluation</string>
+
+</resources>

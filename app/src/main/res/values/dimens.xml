@@ -1,0 +1,22 @@
+<resources>
+<!-- quizView -->
+    <dimen name="layout_height_quizView">2dp</dimen>
+    <dimen name="layout_marginLeft_quizView">15dp</dimen>
+    <dimen name="layout_marginRight_quizView">15dp</dimen>
+<!-- quizQuestionName -->
+    <dimen name="textSize_quizQuestionName">20sp</dimen>
+<!-- quizUserNameEditText-->
+    <dimen name="textSize_quizUserNameEditText">20sp</dimen>
+<!--quizQuestionStyle-->
+    <dimen name="textSize_quizQuestionStyle">20sp</dimen>
+    <dimen name="padding_quizQuestionStyle">15dp</dimen>
+
+<!--quizRadioButton-->
+    <dimen name="textSize_quizRadioButton">15sp</dimen>
+    <dimen name="padding_quizRadioButton">10dp</dimen>
+
+<!--Button-->
+    <dimen name="textSize_Button">23sp</dimen>
+    <dimen name="padding_Button">15dp</dimen>
+
+</resources>

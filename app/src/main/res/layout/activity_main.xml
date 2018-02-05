@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.quizapp.MainActivity">
+
+
+    <ScrollView
+        android:id="@+id/relativeLayout"
+        style="@style/quizScroll">
+
+
+        <LinearLayout
+            android:id="@+id/allQuestions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- -->
+            <LinearLayout
+                android:id="@+id/TopLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/name"
+                    style="@style/quizUserNameEditText"
+                    android:textSize="@dimen/textSize_quizUserNameEditText"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/TopName"
+                    style="@style/quizQuestionName"
+                    android:textSize="@dimen/textSize_quizQuestionName"
+                    android:text="@string/textView_derdiedas"
+                    android:textAlignment="center"
+                    android:textColor="@color/derdiedasColor" />
+            </LinearLayout>
+
+            <!-- 1. Question -->
+
+            <LinearLayout
+                android:id="@+id/questionALayout"
+                style="@style/quizQuestionLinearLayout"
+                android:background="@color/white">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/picturea" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/aQuestionRadioGroup"
+                        style="@style/quizRadioGroup">
+
+                        <RadioButton
+                            android:id="@+id/aDer"
+                            style="@style/quizRadioButton"
+                            android:checked="false"
+                            android:padding="@dimen/padding_quizRadioButton"
+                            android:textSize="@dimen/textSize_quizRadioButton"
+
+                            android:text="@string/der" />
+
+                        <RadioButton
+                            android:id="@+id/aDie"
+                            style="@style/quizRadioButton"
+                            android:padding="@dimen/padding_quizRadioButton"
+                            android:textSize="@dimen/textSize_quizRadioButton"
+
+                            android:text="@string/die" />
+
+                        <RadioButton
+                            android:id="@+id/aDas"
+                            style="@style/quizRadioButton"
+                            android:padding="@dimen/padding_quizRadioButton"
+                            android:textSize="@dimen/textSize_quizRadioButton"
+
+                            android:text="@string/das" />
+
+                    </RadioGroup>
+
+                    <TextView
+                        style="@style/quizQuestionStyle"
+                        android:textSize="@dimen/textSize_quizQuestionStyle"
+                        android:padding="@dimen/padding_quizQuestionStyle"
+                        android:text="@string/aQuestion" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                style="@style/quizView"
+                android:background="@color/viewcolor"
+                android:layout_height="@dimen/layout_height_quizView"
+                android:layout_marginLeft="@dimen/layout_marginLeft_quizView"
+                android:layout_marginRight="@dimen/layout_marginRight_quizView"></View>
+
+            <!-- 2. question -->
+
+            <LinearLayout
+                android:id="@+id/questionBLayout"
+                style="@style/quizQuestionLinearLayout"
+                android:background="@color/white">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/pictureb" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                        style="@style/quizRadioGroup"
+                        android:id="@+id/bQuestionRadioGroup">
+
+                        <RadioButton
+                            android:id="@+id/bDer"
+                            style="@style/quizRadioButton"
+                            android:padding="@dimen/padding_quizRadioButton"
+                            android:textSize="@dimen/textSize_quizRadioButton"
+                            android:text="@string/der" />
+
+                        <RadioButton
+                            android:id="@+id/bDie"
+                            style="@style/quizRadioButton"
+                            android:padding="@dimen/padding_quizRadioButton"
+                            android:textSize="@dimen/textSize_quizRadioButton"
+                            android:text="@string/die" />
+
+                        <RadioButton
+                            android:id="@+id/bDas"
+                            style="@style/quizRadioButton"
+                            android:padding="@dimen/padding_quizRadioButton"
+                            android:textSize="@dimen/textSize_quizRadioButton"
+                            android:text="@string/das" />
+
+                    </RadioGroup>
+
+                    <TextView
+                        style="@style/quizQuestionStyle"
+                        android:textSize="@dimen/textSize_quizQuestionStyle"
+                        android:padding="@dimen/padding_quizQuestionStyle"
+
+                        android:text="@string/bQuestion" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                style="@style/quizView"
+                android:background="@color/viewcolor"
+                android:layout_height="@dimen/layout_height_quizView"
+                android:layout_marginLeft="@dimen/layout_marginLeft_quizView"
+                android:layout_marginRight="@dimen/layout_marginRight_quizView"></View>
+            <!-- 3. question -->
+
+            <LinearLayout
+                android:id="@+id/questionCLayout"
+                style="@style/quizQuestionLinearLayout"
+                android:background="@color/white">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/picturec" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                        style="@style/quizRadioGroup"
+                        android:id="@+id/cQuestionRadioGroup">
+
+                        <RadioButton
+                            android:id="@+id/cDer"
+                            style="@style/quizRadioButton"
+                            android:padding="@dimen/padding_quizRadioButton"
+                            android:textSize="@dimen/textSize_quizRadioButton"
+                            android:text="@string/der" />
+
+                        <RadioButton
+                            android:id="@+id/cDie"
+                            style="@style/quizRadioButton"
+                            android:padding="@dimen/padding_quizRadioButton"
+                            android:textSize="@dimen/textSize_quizRadioButton"
+                            android:text="@string/die" />
+
+                        <RadioButton
+                            android:id="@+id/cDas"
+                            style="@style/quizRadioButton"
+                            android:padding="@dimen/padding_quizRadioButton"
+                            android:textSize="@dimen/textSize_quizRadioButton"
+                            android:text="@string/das" />
+
+                    </RadioGroup>
+
+                    <TextView
+                        style="@style/quizQuestionStyle"
+                        android:textSize="@dimen/textSize_quizQuestionStyle"
+                        android:padding="@dimen/padding_quizQuestionStyle"
+
+                        android:text="@string/cQuestion" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                style="@style/quizView"
+                android:background="@color/viewcolor"
+                android:layout_height="@dimen/layout_height_quizView"
+                android:layout_marginLeft="@dimen/layout_marginLeft_quizView"
+                android:layout_marginRight="@dimen/layout_marginRight_quizView">
+
+
+
+            </View>
+            <!-- 4.Questions-->
+
+
+            <LinearLayout
+                android:id="@+id/questionDLayout"
+                style="@style/quizQuestionLinearLayout"
+                android:background="@color/white">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/pictured" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                        style="@style/quizRadioGroup"
+                        android:id="@+id/dQuestionRadioGroup">
+
+                        <RadioButton
+                            android:id="@+id/dDer"
+                            style="@style/quizRadioButton"
+                            android:padding="@dimen/padding_quizRadioButton"
+                            android:textSize="@dimen/textSize_quizRadioButton"
+                            android:text="@string/der" />
+
+                        <RadioButton
+                            android:id="@+id/dDie"
+                            style="@style/quizRadioButton"
+                            android:padding="@dimen/padding_quizRadioButton"
+                            android:textSize="@dimen/textSize_quizRadioButton"
+                            android:text="@string/die" />
+
+                        <RadioButton
+                            android:id="@+id/dDas"
+                            style="@style/quizRadioButton"
+                            android:padding="@dimen/padding_quizRadioButton"
+                            android:textSize="@dimen/textSize_quizRadioButton"
+                            android:text="@string/das" />
+
+                    </RadioGroup>
+
+                    <TextView
+                        style="@style/quizQuestionStyle"
+                        android:textSize="@dimen/textSize_quizQuestionStyle"
+                        android:padding="@dimen/padding_quizQuestionStyle"
+
+                        android:text="@string/dQuestion" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                style="@style/quizView"
+                android:background="@color/viewcolor"
+                android:layout_height="@dimen/layout_height_quizView"
+                android:layout_marginLeft="@dimen/layout_marginLeft_quizView"
+                android:layout_marginRight="@dimen/layout_marginRight_quizView"></View>
+            <!-- 5.Questions-->
+
+
+            <LinearLayout
+                android:id="@+id/questionELayout"
+                style="@style/quizQuestionLinearLayout"
+                android:background="@color/white">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/picturee" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                        style="@style/quizRadioGroup"
+                        android:id="@+id/eQuestionRadioGroup">
+
+                        <RadioButton
+                            android:id="@+id/eDer"
+                            style="@style/quizRadioButton"
+                            android:padding="@dimen/padding_quizRadioButton"
+                            android:textSize="@dimen/textSize_quizRadioButton"
+                            android:text="@string/der" />
+
+                        <RadioButton
+                            android:id="@+id/eDie"
+                            style="@style/quizRadioButton"
+                            android:padding="@dimen/padding_quizRadioButton"
+                            android:textSize="@dimen/textSize_quizRadioButton"
+                            android:text="@string/die" />
+
+                        <RadioButton
+                            android:id="@+id/eDas"
+                            style="@style/quizRadioButton"
+                            android:padding="@dimen/padding_quizRadioButton"
+                            android:textSize="@dimen/textSize_quizRadioButton"
+                            android:text="@string/das" />
+
+                    </RadioGroup>
+
+                    <TextView
+                        style="@style/quizQuestionStyle"
+                        android:textSize="@dimen/textSize_quizQuestionStyle"
+                        android:padding="@dimen/padding_quizQuestionStyle"
+
+                        android:text="@string/eQuestion" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <!-- allQuestion ende -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <!-- reset button -->
+                <Button
+                    android:id="@+id/reset"
+                    style="@style/Button"
+                    android:textSize="@dimen/textSize_Button"
+                    android:padding="@dimen/padding_Button"
+                    android:text="@string/reset"
+                    android:onClick="reset"/>
+                <!-- evaluation button -->
+                <Button
+                    android:id="@+id/evaluation"
+                    style="@style/Button"
+                    android:textSize="@dimen/textSize_Button"
+                    android:padding="@dimen/padding_Button"
+                    android:onClick="onClick"
+                    android:text="@string/evaluation" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

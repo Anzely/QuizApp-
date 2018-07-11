@@ -1,22 +1,33 @@
 <resources>
-<!-- quizView -->
-    <dimen name="layout_height_quizView">2dp</dimen>
-    <dimen name="layout_marginLeft_quizView">15dp</dimen>
-    <dimen name="layout_marginRight_quizView">15dp</dimen>
-<!-- quizQuestionName -->
+    <!-- quizQuestionView -->
+    <dimen name="layout_height_quizQuestionView">2dp</dimen>
+    <dimen name="layout_marginLeft_quizQuestionView">15dp</dimen>
+    <dimen name="layout_marginRight_quizQuestionView">15dp</dimen>
+
+    <!-- quizQuestionGroupView -->
+    <dimen name="layout_height_quizQuestionGroupView">6dp</dimen>
+    <dimen name="layout_marginLeft_quizQuestionGroupView">15dp</dimen>
+    <dimen name="layout_marginRight_quizQuestionGroupView">15dp</dimen>
+
+
+    <!-- quizQuestionName -->
     <dimen name="textSize_quizQuestionName">20sp</dimen>
-<!-- quizUserNameEditText-->
-    <dimen name="textSize_quizUserNameEditText">20sp</dimen>
-<!--quizQuestionStyle-->
+
+    <!--quizQuestionStyle-->
     <dimen name="textSize_quizQuestionStyle">20sp</dimen>
     <dimen name="padding_quizQuestionStyle">15dp</dimen>
 
-<!--quizRadioButton-->
+    <!--quizRadioButton-->
     <dimen name="textSize_quizRadioButton">15sp</dimen>
     <dimen name="padding_quizRadioButton">10dp</dimen>
 
-<!--Button-->
+    <!--quizCheckBox-->
+    <dimen name="textSize_quizCheckBox">15sp</dimen>
+    <dimen name="padding_quizCheckBox">10dp</dimen>
+
+    <!--Button-->
     <dimen name="textSize_Button">23sp</dimen>
     <dimen name="padding_Button">15dp</dimen>
+    <dimen name="CheckBox_Layout_margintLeft">30dp</dimen>
 
 </resources>

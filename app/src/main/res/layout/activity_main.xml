@@ -12,7 +12,6 @@
         android:id="@+id/relativeLayout"
         style="@style/quizScroll">
 
-
         <LinearLayout
             android:id="@+id/allQuestions"
             android:layout_width="match_parent"
@@ -21,28 +20,21 @@
 
             <!-- -->
             <LinearLayout
-                android:id="@+id/TopLayout"
+                android:id="@+id/QuestionGroupLayoutA"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <EditText
-                    android:id="@+id/name"
-                    style="@style/quizUserNameEditText"
-                    android:textSize="@dimen/textSize_quizUserNameEditText"
-                    android:textAlignment="center" />
-
                 <TextView
-                    android:id="@+id/TopName"
+                    android:id="@+id/QuestionGroupAName"
                     style="@style/quizQuestionName"
-                    android:textSize="@dimen/textSize_quizQuestionName"
                     android:text="@string/textView_derdiedas"
                     android:textAlignment="center"
-                    android:textColor="@color/derdiedasColor" />
+                    android:textColor="@color/questionColor"
+                    android:textSize="@dimen/textSize_quizQuestionName" />
             </LinearLayout>
 
             <!-- 1. Question -->
-
             <LinearLayout
                 android:id="@+id/questionALayout"
                 style="@style/quizQuestionLinearLayout"
@@ -53,6 +45,7 @@
                     android:layout_height="wrap_content"
                     android:src="@drawable/picturea" />
 
+
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -60,52 +53,49 @@
 
                     <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
                         android:id="@+id/aQuestionRadioGroup"
-                        style="@style/quizRadioGroup">
+                        style="@style/quizAnswerGroup">
 
                         <RadioButton
                             android:id="@+id/aDer"
                             style="@style/quizRadioButton"
                             android:checked="false"
                             android:padding="@dimen/padding_quizRadioButton"
-                            android:textSize="@dimen/textSize_quizRadioButton"
+                            android:text="@string/der"
 
-                            android:text="@string/der" />
+                            android:textSize="@dimen/textSize_quizRadioButton" />
 
                         <RadioButton
                             android:id="@+id/aDie"
                             style="@style/quizRadioButton"
                             android:padding="@dimen/padding_quizRadioButton"
-                            android:textSize="@dimen/textSize_quizRadioButton"
+                            android:text="@string/die"
 
-                            android:text="@string/die" />
+                            android:textSize="@dimen/textSize_quizRadioButton" />
 
                         <RadioButton
                             android:id="@+id/aDas"
                             style="@style/quizRadioButton"
                             android:padding="@dimen/padding_quizRadioButton"
-                            android:textSize="@dimen/textSize_quizRadioButton"
-
-                            android:text="@string/das" />
-
+                            android:text="@string/das"
+                            android:textSize="@dimen/textSize_quizRadioButton" />
                     </RadioGroup>
 
                     <TextView
                         style="@style/quizQuestionStyle"
-                        android:textSize="@dimen/textSize_quizQuestionStyle"
                         android:padding="@dimen/padding_quizQuestionStyle"
-                        android:text="@string/aQuestion" />
+                        android:text="@string/aAQuestion"
+                        android:textSize="@dimen/textSize_quizQuestionStyle" />
                 </LinearLayout>
             </LinearLayout>
 
             <View
-                style="@style/quizView"
-                android:background="@color/viewcolor"
-                android:layout_height="@dimen/layout_height_quizView"
-                android:layout_marginLeft="@dimen/layout_marginLeft_quizView"
-                android:layout_marginRight="@dimen/layout_marginRight_quizView"></View>
+                style="@style/quizQuestionView"
+                android:layout_height="@dimen/layout_height_quizQuestionView"
+                android:layout_marginLeft="@dimen/layout_marginLeft_quizQuestionView"
+                android:layout_marginRight="@dimen/layout_marginRight_quizQuestionView"
+                android:background="@color/viewcolor"></View>
 
             <!-- 2. question -->
-
             <LinearLayout
                 android:id="@+id/questionBLayout"
                 style="@style/quizQuestionLinearLayout"
@@ -122,51 +112,47 @@
                     android:orientation="vertical">
 
                     <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
-                        style="@style/quizRadioGroup"
-                        android:id="@+id/bQuestionRadioGroup">
+                        android:id="@+id/bQuestionRadioGroup"
+                        style="@style/quizAnswerGroup">
 
                         <RadioButton
                             android:id="@+id/bDer"
                             style="@style/quizRadioButton"
                             android:padding="@dimen/padding_quizRadioButton"
-                            android:textSize="@dimen/textSize_quizRadioButton"
-                            android:text="@string/der" />
+                            android:text="@string/der"
+                            android:textSize="@dimen/textSize_quizRadioButton" />
 
                         <RadioButton
                             android:id="@+id/bDie"
                             style="@style/quizRadioButton"
                             android:padding="@dimen/padding_quizRadioButton"
-                            android:textSize="@dimen/textSize_quizRadioButton"
-                            android:text="@string/die" />
+                            android:text="@string/die"
+                            android:textSize="@dimen/textSize_quizRadioButton" />
 
                         <RadioButton
                             android:id="@+id/bDas"
                             style="@style/quizRadioButton"
                             android:padding="@dimen/padding_quizRadioButton"
-                            android:textSize="@dimen/textSize_quizRadioButton"
-                            android:text="@string/das" />
-
+                            android:text="@string/das"
+                            android:textSize="@dimen/textSize_quizRadioButton" />
                     </RadioGroup>
 
                     <TextView
                         style="@style/quizQuestionStyle"
-                        android:textSize="@dimen/textSize_quizQuestionStyle"
                         android:padding="@dimen/padding_quizQuestionStyle"
-
-                        android:text="@string/bQuestion" />
+                        android:text="@string/bAQuestion"
+                        android:textSize="@dimen/textSize_quizQuestionStyle" />
                 </LinearLayout>
-
-
             </LinearLayout>
 
             <View
-                style="@style/quizView"
-                android:background="@color/viewcolor"
-                android:layout_height="@dimen/layout_height_quizView"
-                android:layout_marginLeft="@dimen/layout_marginLeft_quizView"
-                android:layout_marginRight="@dimen/layout_marginRight_quizView"></View>
-            <!-- 3. question -->
+                style="@style/quizQuestionView"
+                android:layout_height="@dimen/layout_height_quizQuestionView"
+                android:layout_marginLeft="@dimen/layout_marginLeft_quizQuestionView"
+                android:layout_marginRight="@dimen/layout_marginRight_quizQuestionView"
+                android:background="@color/viewcolor"></View>
 
+            <!-- 3. question -->
             <LinearLayout
                 android:id="@+id/questionCLayout"
                 style="@style/quizQuestionLinearLayout"
@@ -183,55 +169,48 @@
                     android:orientation="vertical">
 
                     <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
-                        style="@style/quizRadioGroup"
-                        android:id="@+id/cQuestionRadioGroup">
+                        android:id="@+id/cQuestionRadioGroup"
+                        style="@style/quizAnswerGroup">
 
                         <RadioButton
                             android:id="@+id/cDer"
                             style="@style/quizRadioButton"
                             android:padding="@dimen/padding_quizRadioButton"
-                            android:textSize="@dimen/textSize_quizRadioButton"
-                            android:text="@string/der" />
+                            android:text="@string/der"
+                            android:textSize="@dimen/textSize_quizRadioButton" />
 
                         <RadioButton
                             android:id="@+id/cDie"
                             style="@style/quizRadioButton"
                             android:padding="@dimen/padding_quizRadioButton"
-                            android:textSize="@dimen/textSize_quizRadioButton"
-                            android:text="@string/die" />
+                            android:text="@string/die"
+                            android:textSize="@dimen/textSize_quizRadioButton" />
 
                         <RadioButton
                             android:id="@+id/cDas"
                             style="@style/quizRadioButton"
                             android:padding="@dimen/padding_quizRadioButton"
-                            android:textSize="@dimen/textSize_quizRadioButton"
-                            android:text="@string/das" />
-
+                            android:text="@string/das"
+                            android:textSize="@dimen/textSize_quizRadioButton" />
                     </RadioGroup>
 
                     <TextView
                         style="@style/quizQuestionStyle"
-                        android:textSize="@dimen/textSize_quizQuestionStyle"
                         android:padding="@dimen/padding_quizQuestionStyle"
+                        android:text="@string/cAQuestion"
+                        android:textSize="@dimen/textSize_quizQuestionStyle" />
 
-                        android:text="@string/cQuestion" />
                 </LinearLayout>
-
             </LinearLayout>
 
             <View
-                style="@style/quizView"
-                android:background="@color/viewcolor"
-                android:layout_height="@dimen/layout_height_quizView"
-                android:layout_marginLeft="@dimen/layout_marginLeft_quizView"
-                android:layout_marginRight="@dimen/layout_marginRight_quizView">
+                style="@style/quizQuestionView"
+                android:layout_height="@dimen/layout_height_quizQuestionView"
+                android:layout_marginLeft="@dimen/layout_marginLeft_quizQuestionView"
+                android:layout_marginRight="@dimen/layout_marginRight_quizQuestionView"
+                android:background="@color/viewcolor"></View>
 
-
-
-            </View>
             <!-- 4.Questions-->
-
-
             <LinearLayout
                 android:id="@+id/questionDLayout"
                 style="@style/quizQuestionLinearLayout"
@@ -248,53 +227,49 @@
                     android:orientation="vertical">
 
                     <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
-                        style="@style/quizRadioGroup"
-                        android:id="@+id/dQuestionRadioGroup">
+                        android:id="@+id/dQuestionRadioGroup"
+                        style="@style/quizAnswerGroup">
 
                         <RadioButton
                             android:id="@+id/dDer"
                             style="@style/quizRadioButton"
                             android:padding="@dimen/padding_quizRadioButton"
-                            android:textSize="@dimen/textSize_quizRadioButton"
-                            android:text="@string/der" />
+                            android:text="@string/der"
+                            android:textSize="@dimen/textSize_quizRadioButton" />
 
                         <RadioButton
                             android:id="@+id/dDie"
                             style="@style/quizRadioButton"
                             android:padding="@dimen/padding_quizRadioButton"
-                            android:textSize="@dimen/textSize_quizRadioButton"
-                            android:text="@string/die" />
+                            android:text="@string/die"
+                            android:textSize="@dimen/textSize_quizRadioButton" />
 
                         <RadioButton
                             android:id="@+id/dDas"
                             style="@style/quizRadioButton"
                             android:padding="@dimen/padding_quizRadioButton"
-                            android:textSize="@dimen/textSize_quizRadioButton"
-                            android:text="@string/das" />
+                            android:text="@string/das"
+                            android:textSize="@dimen/textSize_quizRadioButton" />
 
                     </RadioGroup>
 
                     <TextView
                         style="@style/quizQuestionStyle"
-                        android:textSize="@dimen/textSize_quizQuestionStyle"
                         android:padding="@dimen/padding_quizQuestionStyle"
-
-                        android:text="@string/dQuestion" />
+                        android:text="@string/dAQuestion"
+                        android:textSize="@dimen/textSize_quizQuestionStyle" />
 
                 </LinearLayout>
-
-
             </LinearLayout>
 
             <View
-                style="@style/quizView"
-                android:background="@color/viewcolor"
-                android:layout_height="@dimen/layout_height_quizView"
-                android:layout_marginLeft="@dimen/layout_marginLeft_quizView"
-                android:layout_marginRight="@dimen/layout_marginRight_quizView"></View>
+                style="@style/quizQuestionView"
+                android:layout_height="@dimen/layout_height_quizQuestionView"
+                android:layout_marginLeft="@dimen/layout_marginLeft_quizQuestionView"
+                android:layout_marginRight="@dimen/layout_marginRight_quizQuestionView"
+                android:background="@color/viewcolor"></View>
+
             <!-- 5.Questions-->
-
-
             <LinearLayout
                 android:id="@+id/questionELayout"
                 style="@style/quizQuestionLinearLayout"
@@ -311,70 +286,311 @@
                     android:orientation="vertical">
 
                     <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
-                        style="@style/quizRadioGroup"
-                        android:id="@+id/eQuestionRadioGroup">
+                        android:id="@+id/eQuestionRadioGroup"
+                        style="@style/quizAnswerGroup">
 
                         <RadioButton
                             android:id="@+id/eDer"
                             style="@style/quizRadioButton"
                             android:padding="@dimen/padding_quizRadioButton"
-                            android:textSize="@dimen/textSize_quizRadioButton"
-                            android:text="@string/der" />
+                            android:text="@string/der"
+                            android:textSize="@dimen/textSize_quizRadioButton" />
 
                         <RadioButton
                             android:id="@+id/eDie"
                             style="@style/quizRadioButton"
                             android:padding="@dimen/padding_quizRadioButton"
-                            android:textSize="@dimen/textSize_quizRadioButton"
-                            android:text="@string/die" />
+                            android:text="@string/die"
+                            android:textSize="@dimen/textSize_quizRadioButton" />
 
                         <RadioButton
                             android:id="@+id/eDas"
                             style="@style/quizRadioButton"
                             android:padding="@dimen/padding_quizRadioButton"
-                            android:textSize="@dimen/textSize_quizRadioButton"
-                            android:text="@string/das" />
+                            android:text="@string/das"
+                            android:textSize="@dimen/textSize_quizRadioButton" />
 
                     </RadioGroup>
 
                     <TextView
                         style="@style/quizQuestionStyle"
-                        android:textSize="@dimen/textSize_quizQuestionStyle"
                         android:padding="@dimen/padding_quizQuestionStyle"
-
-                        android:text="@string/eQuestion" />
+                        android:text="@string/eAQuestion"
+                        android:textSize="@dimen/textSize_quizQuestionStyle" />
 
                 </LinearLayout>
-
-
             </LinearLayout>
-            <!-- allQuestion ende -->
 
+            <View
+                style="@style/quizQuestionGroupView"
+                android:layout_height="@dimen/layout_height_quizQuestionGroupView"
+                android:layout_marginLeft="@dimen/layout_marginLeft_quizQuestionGroupView"
+                android:layout_marginRight="@dimen/layout_marginRight_quizQuestionGroupView"
+                android:background="@color/viewcolor"></View>
+
+            <!-- 2. Question Group begining -->
+            <LinearLayout
+                android:id="@+id/QuestionGroupLayoutB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/QuestionGroupBName"
+                    style="@style/quizQuestionName"
+                    android:text="@string/textView_article"
+                    android:textAlignment="center"
+                    android:textColor="@color/questionColor"
+                    android:textSize="@dimen/textSize_quizQuestionName" />
+            </LinearLayout>
+
+
+            <View
+                style="@style/quizQuestionView"
+                android:layout_height="@dimen/layout_height_quizQuestionView"
+                android:layout_marginLeft="@dimen/layout_marginLeft_quizQuestionView"
+                android:layout_marginRight="@dimen/layout_marginRight_quizQuestionView"
+                android:background="@color/viewcolor"></View>
+
+            <!-- 2. Question Group 1. Question -->
+            <LinearLayout
+                android:id="@+id/questionFLayoutComplete"
+                style="@style/quizQuestionBLinearLayout"
+                android:background="@color/white">
+
+                <TextView
+                    style="@style/quizBGroupQuestionStyle"
+                    android:text="@string/aBQuestion"
+                    android:textSize="@dimen/textSize_quizQuestionStyle" />
+
+                <LinearLayout
+                    style="@style/quizAnswerGroup"
+                    android:layout_marginLeft="@dimen/CheckBox_Layout_margintLeft">
+
+                    <CheckBox
+                        android:id="@+id/checkboxFDer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/padding_quizCheckBox"
+                        android:text="@string/der"
+                        android:textSize="@dimen/textSize_quizCheckBox" />
+
+                    <CheckBox
+                        android:id="@+id/checkboxFDie"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/padding_quizCheckBox"
+                        android:text="@string/die"
+                        android:textSize="@dimen/textSize_quizCheckBox" />
+
+                    <CheckBox
+                        android:id="@+id/checkboxFDas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/padding_quizCheckBox"
+                        android:text="@string/das"
+                        android:textSize="@dimen/textSize_quizCheckBox" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/quizAnswerGroup"
+                    android:layout_marginLeft="@dimen/CheckBox_Layout_margintLeft">
+
+                    <CheckBox
+                        android:id="@+id/checkboxFEin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/padding_quizCheckBox"
+                        android:text="@string/ein"
+                        android:textSize="@dimen/textSize_quizCheckBox" />
+
+                    <CheckBox
+                        android:id="@+id/checkboxFEine"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/padding_quizCheckBox"
+                        android:text="@string/eine"
+                        android:textSize="@dimen/textSize_quizCheckBox" />
+
+                    <CheckBox
+                        android:id="@+id/checkboxFNie"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/padding_quizCheckBox"
+                        android:text="@string/nie"
+                        android:textSize="@dimen/textSize_quizCheckBox" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                style="@style/quizQuestionView"
+                android:layout_height="@dimen/layout_height_quizQuestionView"
+                android:layout_marginLeft="@dimen/layout_marginLeft_quizQuestionView"
+                android:layout_marginRight="@dimen/layout_marginRight_quizQuestionView"
+                android:background="@color/viewcolor"></View>
+            <!-- 2. Question Group  2. Question-->
+            <LinearLayout
+                android:id="@+id/questionGLayoutComplete"
+                style="@style/quizQuestionBLinearLayout"
+                android:background="@color/white">
+
+                <TextView
+                    style="@style/quizBGroupQuestionStyle"
+                    android:text="@string/bBQuestion"
+                    android:textSize="@dimen/textSize_quizQuestionStyle" />
+
+                <LinearLayout
+                    style="@style/quizAnswerGroup"
+                    android:layout_marginLeft="@dimen/CheckBox_Layout_margintLeft">
+
+                    <CheckBox
+                        android:id="@+id/checkboxGDer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/padding_quizCheckBox"
+                        android:text="@string/der"
+                        android:textSize="@dimen/textSize_quizCheckBox" />
+
+                    <CheckBox
+                        android:id="@+id/checkboxGDie"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/padding_quizCheckBox"
+                        android:text="@string/die"
+                        android:textSize="@dimen/textSize_quizCheckBox" />
+
+                    <CheckBox
+                        android:id="@+id/checkboxGDas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/padding_quizCheckBox"
+                        android:text="@string/das"
+                        android:textSize="@dimen/textSize_quizCheckBox" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/quizAnswerGroup"
+                    android:layout_marginLeft="@dimen/CheckBox_Layout_margintLeft">
+
+                    <CheckBox
+                        android:id="@+id/checkboxGEin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/padding_quizCheckBox"
+                        android:text="@string/ein"
+                        android:textSize="@dimen/textSize_quizCheckBox" />
+
+                    <CheckBox
+                        android:id="@+id/checkboxGEine"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/padding_quizCheckBox"
+                        android:text="@string/eine"
+                        android:textSize="@dimen/textSize_quizCheckBox" />
+
+                    <CheckBox
+                        android:id="@+id/checkboxGNie"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/padding_quizCheckBox"
+                        android:text="@string/nie"
+                        android:textSize="@dimen/textSize_quizCheckBox" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                style="@style/quizQuestionView"
+                android:layout_height="@dimen/layout_height_quizQuestionView"
+                android:layout_marginLeft="@dimen/layout_marginLeft_quizQuestionView"
+                android:layout_marginRight="@dimen/layout_marginRight_quizQuestionView"
+                android:background="@color/viewcolor"></View>
+
+            <!-- 3. Question Group begining -->
+            <View
+                style="@style/quizQuestionGroupView"
+                android:layout_height="@dimen/layout_height_quizQuestionGroupView"
+                android:layout_marginLeft="@dimen/layout_marginLeft_quizQuestionGroupView"
+                android:layout_marginRight="@dimen/layout_marginRight_quizQuestionGroupView"
+                android:background="@color/viewcolor"></View>
+
+            <LinearLayout
+                android:id="@+id/QuestionGroupLayoutC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/QuestionGroupCName"
+                    style="@style/quizQuestionName"
+                    android:text="@string/textView_plural"
+                    android:textAlignment="center"
+                    android:textColor="@color/questionColor"
+                    android:textSize="@dimen/textSize_quizQuestionName" />
+            </LinearLayout>
+
+            <View
+                style="@style/quizQuestionView"
+                android:layout_height="@dimen/layout_height_quizQuestionView"
+                android:layout_marginLeft="@dimen/layout_marginLeft_quizQuestionView"
+                android:layout_marginRight="@dimen/layout_marginRight_quizQuestionView"
+                android:background="@color/viewcolor"></View>
+
+            <!-- 3. Question Group 1. Question-->
+            <LinearLayout
+                android:id="@+id/questionHLayoutComplete"
+                style="@style/quizQuestionBLinearLayout"
+                android:background="@color/white">
+
+                <TextView
+                    style="@style/quizBGroupQuestionStyle"
+                    android:text="@string/aCQuestion"
+                    android:textSize="@dimen/textSize_quizQuestionStyle" />
+
+                <LinearLayout
+                    style="@style/quizAnswerGroup"
+                    android:layout_marginLeft="@dimen/CheckBox_Layout_margintLeft">
+
+                    <EditText
+                        android:id="@+id/editTextHText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Plural Form (ohne Artikel)"
+                        android:inputType="text" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                style="@style/quizQuestionView"
+                android:layout_height="@dimen/layout_height_quizQuestionView"
+                android:layout_marginLeft="@dimen/layout_marginLeft_quizQuestionView"
+                android:layout_marginRight="@dimen/layout_marginRight_quizQuestionView"
+                android:background="@color/viewcolor"></View>
+
+            <!-- allQuestion ende -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
+
                 <!-- reset button -->
                 <Button
                     android:id="@+id/reset"
                     style="@style/Button"
-                    android:textSize="@dimen/textSize_Button"
+                    android:onClick="reset"
                     android:padding="@dimen/padding_Button"
                     android:text="@string/reset"
-                    android:onClick="reset"/>
+                    android:textSize="@dimen/textSize_Button" />
+
                 <!-- evaluation button -->
                 <Button
                     android:id="@+id/evaluation"
                     style="@style/Button"
-                    android:textSize="@dimen/textSize_Button"
-                    android:padding="@dimen/padding_Button"
                     android:onClick="onClick"
-                    android:text="@string/evaluation" />
+                    android:padding="@dimen/padding_Button"
+                    android:text="@string/evaluation"
+                    android:textSize="@dimen/textSize_Button" />
             </LinearLayout>
         </LinearLayout>
-
-
     </ScrollView>
-
-
 </LinearLayout>

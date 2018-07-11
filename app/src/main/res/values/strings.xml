@@ -1,27 +1,51 @@
 <resources>
     <string name="app_name">QuizApp</string>
-    <!-- User Name-->
-    <string name="editText_Name">Your name</string>
-    <!-- Question-->
+
+    <!-- Questions-->
     <string name="textView_derdiedas">Der? Die? Das?</string>
+    <string name="textView_article">Welcher bestimmte und unbestimmte Artikel ist richtig? (Nominativ)</string>
+    <string name="textView_plural">Was ist des Wort der Plural?</string>
 
     <!-- Answer-->
     <string name="der">Der</string>
     <string name="die">Die</string>
     <string name="das">Das</string>
+    <string name="ein">Ein</string>
+    <string name="eine">Eine</string>
+    <string name="nie"> -- </string>
 
-    <!-- a, The words of question-->
-    <string name="aQuestion">____ Apfel</string>
-    <!-- b, The words of question-->
-    <string name="bQuestion">____ Tisch</string>
-    <!-- c, The words of question-->
-    <string name="cQuestion">____ Frosch</string>
-    <!-- d, The words of question-->
-    <string name="dQuestion">____ Hund</string>
-    <!-- e, The words of question-->
-    <string name="eQuestion">____ Computer</string>
+    <!-- aA, The words of question-->
+    <string name="aAQuestion">____ Apfel</string>
+    <!-- bA, The words of question-->
+    <string name="bAQuestion">____ Tisch</string>
+    <!-- cA, The words of question-->
+    <string name="cAQuestion">____ Frosch</string>
+    <!-- dA, The words of question-->
+    <string name="dAQuestion">____ Hund</string>
+    <!-- eA, The words of question-->
+    <string name="eAQuestion">____ Computer</string>
+
+    <!-- aB, The words of question-->
+    <string name="aBQuestion">____ Kind</string>
+    <!-- bB, The words of question-->
+    <string name="bBQuestion">____ Katze</string>
+
+
+
+    <!-- aC, The words of question-->
+    <string name="aCQuestion">das Zimmer</string>
+
+    <!-- bC, The words of question-->
+    <string name="bCQuestion">die Bluse</string>
+
+
+
+
 
     <string name="reset">Reset</string>
     <string name="evaluation">Evaluation</string>
+    <string name="messageText">Correct answer: %1$d\n Wrong answer: %2$d\n Missing answer: %3$d</string>
+    <string name="good">\nFlawless Congratulations!</string>
+    <string name="wrong">\nTry again.</string>
 
 </resources>
